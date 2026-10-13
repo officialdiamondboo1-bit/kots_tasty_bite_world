@@ -1,0 +1,68 @@
+/* CSS Document - Kot's Tasty Bites Core Styling */
+
+:root {
+    --primary-color: #d9381e;    /* Accent color (e.g., warm restaurant red/orange) */
+    --secondary-color: #2c3e50;  /* Branding color (e.g., deep charcoal slate) */
+    --accent-color: #f1c40f;     /* Highlights (e.g., warm golden honey) */
+    --light-background: #faf9f6; /* Soft body background */
+    --dark-text: #222222;        /* Legible dark font */
+    --heading-font: 'Arial', sans-serif;
+    --body-font: 'Helvetica', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* Header & Navigation layout modeled directly after your rafting design */
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
