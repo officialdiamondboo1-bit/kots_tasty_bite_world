@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kot's Tasty Bites World| Savory Delights</title>
+    <meta name="theme-color" content="#f3efe7">
+    <title>Kot's Tasty Bites World | Good food, your way</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <header>
-        
-            <h1>Kot's Tasty Bites World</h1>
-        </div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Kot's Tasty Bites World home">
+            <span class="brand-emblem"><img src="images/image_42bbc8f5.jpg" alt=""></span>
+            <span class="brand-name">Kot's <small>Tasty Bites World</small></span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="index.html" class="active" aria-current="page">Home</a>
             <a href="menu.html">Our Menu</a>
-            <a href="contact.html">Contact & Location</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-call" href="tel:+2348064856196">Call us</a>
         </nav>
     </header>
 
-    <main>
-        <section class="hero-showcase">
-            <h2>Welcome to Kot's Tasty Bites World</h2>
-            <p>Your local spot for fresh, delicious meals crafted with exceptional care.</p>
+    <main class="home-main">
+        <section class="home-hero" aria-labelledby="home-title">
+            <div class="hero-copy">
+                <p class="eyebrow">Mains · grills · bakes · treats</p>
+                <h1 id="home-title">Kot's Tasty<br><span>Bites World</span></h1>
+                <p class="hero-description">Good food, your way. Find a favourite on the menu, then order directly with us.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="menu.html">Explore the menu <span aria-hidden="true">↗</span></a>
+                    <a class="button button-outline" href="https://wa.me/2348064856196?text=Hello%2C%20I%27d%20like%20to%20make%20an%20enquiry.">Message on WhatsApp</a>
+                </div>
+                <p class="hero-phone"><span aria-hidden="true">Call</span> <a href="tel:+2348064856196">+234 806 485 6196</a></p>
+            </div>
+            <figure class="hero-art">
+                <img src="images/image_42bbc8f5.jpg" alt="Kot's Tasty Bites World logo in warm copper lettering">
+                <figcaption>Made for good moments around the table.</figcaption>
+            </figure>
+        </section>
+
+        <section class="browse-section" aria-labelledby="browse-title">
+            <div class="section-heading">
+                <p class="eyebrow">Something for every craving</p>
+                <h2 id="browse-title">What sounds good?</h2>
+            </div>
+            <div class="category-links">
+                <a href="menu.html#mains">Mains <span aria-hidden="true">↗</span></a>
+                <a href="menu.html#grills">Grills &amp; barbecue <span aria-hidden="true">↗</span></a>
+                <a href="menu.html#shawarma">Shawarma <span aria-hidden="true">↗</span></a>
+                <a href="menu.html#bakery">Bakery <span aria-hidden="true">↗</span></a>
+                <a href="menu.html#cakes">Cakes &amp; treats <span aria-hidden="true">↗</span></a>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kot's Tasty Bites World| Project Format Migration</p>
+    <footer class="site-footer">
+        <a class="footer-brand" href="index.html">Kot's Tasty Bites World</a>
+        <p>Good food, your way.</p>
+        <a href="tel:+2348064856196">+234 806 485 6196</a>
+        <span>&copy; 2026 Kot's Tasty Bites World</span>
     </footer>
 </body>
 </html>
